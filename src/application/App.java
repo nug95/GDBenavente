@@ -2,6 +2,8 @@ package application;
 
 import java.util.Scanner;
 
+import controller.GereDonativo;
+import views.Donativos;
 import views.Socios;
 
 public class App {
@@ -11,6 +13,7 @@ public class App {
 	boolean esco = true;
 	
 	Socios socios = new Socios();
+	Donativos donativos = new Donativos();
 	
 	public App(){
 		
@@ -24,7 +27,8 @@ public class App {
 					socios.showAllSocios();
 					opc = 0;
 					break;
-				case 3:
+				case 3://Gerir Donativos
+					donativos.GereDonativo();
 					opc = 0;
 					break;
 				case 4:

@@ -33,5 +33,14 @@ public class GereSocio {
 		this.arSocio = arSocio;
 	}
 	
+	public Socio getSocio(String ns){
+		for(Socio s: arSocio){
+			if(s.getNome() == ns){
+				return s;
+			}
+		}
+		return null;
+	}
+	
 	
 }
